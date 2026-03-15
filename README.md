@@ -1,43 +1,41 @@
-# Fleet Heartbeat
+<div align="center">
 
-[![CI](https://github.com/blackboxprogramming/fleet-heartbeat/actions/workflows/ci.yml/badge.svg)](https://github.com/blackboxprogramming/fleet-heartbeat/actions/workflows/ci.yml)
-[![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-3776AB.svg)](https://python.org)
-[![FastAPI](https://img.shields.io/badge/FastAPI-009688.svg)](https://fastapi.tiangolo.com)
-[![Pi Fleet](https://img.shields.io/badge/fleet-5_nodes-FF2255.svg)](https://blackroad.io)
+<img src="https://images.blackroad.io/pixel-art/road-logo.png" alt="BlackRoad OS" width="80" />
 
+# fleet-heartbeat
 
+**Fleet Heartbeat — Real-time health monitoring dashboard for distributed Raspberry Pi clusters. SSH-based checks, SQLite history, auto-healing, and web UI. Python + FastAPI.**
 
-Real-time health monitoring for the BlackRoad Pi mesh. Probes 5 Raspberry Pi nodes via SSH, collects CPU temp, memory, disk, Ollama models, Docker containers, and stores history in SQLite.
+[![BlackRoad OS](https://img.shields.io/badge/BlackRoad_OS-Pave_Tomorrow-FF2255?style=for-the-badge&labelColor=000000)](https://blackroad.io)
+[![License](https://img.shields.io/badge/License-Proprietary-FF6B2B?style=for-the-badge&labelColor=000000)](./LICENSE)
+[![Edge AI](https://img.shields.io/badge/Edge_AI-52_TOPS-00D4FF?style=for-the-badge&labelColor=000000)](https://github.com/BlackRoad-OS-Inc)
 
-## Nodes
+</div>
 
-| Name | IP | Role |
-|------|-----|------|
-| Alice | 192.168.4.49 | Gateway, Pi-hole, PostgreSQL |
-| Cecilia | 192.168.4.96 | CECE AI, TTS, Hailo-8 |
-| Octavia | 192.168.4.100 | Gitea, NVMe, Hailo-8 |
-| Aria | 192.168.4.98 | Portainer, Headscale |
-| Lucidia | 192.168.4.38 | Lucidia API, CarPool |
+<div align="center">
+<sub>Part of the <a href="https://blackroad.io">BlackRoad OS</a> ecosystem — sovereign edge AI infrastructure</sub>
+</div>
 
-## API
+---
 
-| Endpoint | Method | Description |
-|----------|--------|-------------|
-| `/` | GET | Live dashboard (auto-refresh 30s) |
-| `/health` | GET | Service health |
-| `/fleet` | GET | Probe all nodes, return live stats |
-| `/fleet/history` | GET | Historical data (`?node=alice&limit=50`) |
+## Overview
 
-## Run
+Fleet Heartbeat — Real-time health monitoring dashboard for distributed Raspberry Pi clusters. SSH-based checks, SQLite history, auto-healing, and web UI. Python + FastAPI.
 
-```bash
-pip install -r requirements.txt
-python server.py  # http://localhost:8500
-```
+## License
 
-## Test
+**Proprietary** — Copyright © 2024–2026 [BlackRoad OS, Inc.](https://blackroad.io) All rights reserved.
 
-```bash
-pip install pytest
-pytest tests/
-```
+Founder & CEO: **Alexa Louise Amundson** · Delaware C-Corp
+
+See [LICENSE](./LICENSE) for full terms.
+
+---
+
+<div align="center">
+
+**BlackRoad OS — Pave Tomorrow.**
+
+[blackroad.io](https://blackroad.io) · [GitHub](https://github.com/BlackRoad-OS-Inc) · [Brand](https://brand.blackroad.io)
+
+</div>
