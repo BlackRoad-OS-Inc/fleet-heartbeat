@@ -1,5 +1,13 @@
 # fleet-heartbeat
 
+> Fleet Heartbeat — real-time health monitoring dashboard for distributed Raspberry Pi clusters (BlackRoad integration)
+
+Part of the [BlackRoad OS](https://blackroad.io) ecosystem — [BlackRoad-OS-Inc](https://github.com/BlackRoad-OS-Inc)
+
+---
+
+# fleet-heartbeat
+
 Fleet Heartbeat — real-time health monitoring dashboard for distributed Raspberry Pi clusters (BlackRoad integration)
 
 **BlackRoad-OS-Inc** — Corporate root — all IP and governance
